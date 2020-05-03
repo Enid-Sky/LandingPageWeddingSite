@@ -82,6 +82,46 @@ document.addEventListener('scroll', function () {
   setActive();
 });
 
+//create top scroll button
+const btn = document.createElement("BUTTON");
+btn.innerText = "Top";
+btn.setAttribute('id', 'myBtn');
+document.body.appendChild(btn);
+
+
+
+//get top scroll button:
+myBtn = document.getElementById('myBtn');
+
+
+//show button when user scrolls away from the top
+function showButton() {
+  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+    myBtn.style.display = 'block';
+    const buttonStyle = myBtn.getAttribute('id');
+    buttonStyle.classList.add('active-button-class');
+
+  } else {
+    myBtn.style.display = 'none';
+    const buttonStyle = myBtn.getAttribute('id');
+    buttonStyle.classList.remove('active-button-class');
+  }
+}
+
+window.onscroll = function () {
+  showButton()
+};
+
+
+//click button to scroll to the top
+
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+
+document.addEventListener('click', function () {
+  topFunction();
+});
 
 
 
