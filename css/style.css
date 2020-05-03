@@ -10,18 +10,24 @@
 
 
 /* ---- Base Rules ---- */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: rgb(136, 203, 171);
   background: linear-gradient(0deg, rgba(136, 203, 171, 1) 0%, rgba(0, 13, 60, 1) 100%);
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', Sans-Serif;
   color: #fff;
+
 }
 
 
 /* Typeography General*/
 h1 {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Poppins', 'Fira Sans', sans-serif;
   font-size: 3em;
   margin: 2em 1rem;
 }
@@ -34,7 +40,7 @@ h1 {
 }
 
 h2 {
-  border-bottom: 1px solid #cc1;
+  border-bottom: 1px solid rgb(233, 151, 212);
   font-family: 'Oxygen', Sans-Serif;
   font-size: 3em;
   color: #fff;
@@ -42,22 +48,26 @@ h2 {
 
 p {
   line-height: 1.6em;
-  color: #eee;
+  color: #fff;
+
 }
 
 /* ---- Layout Rules ---- */
 main {
   margin: 10vh 1em 10vh;
+
 }
 
 .main-hero {
   min-height: 40vh;
   padding-top: 3em;
+
 }
 
 section {
   position: relative;
-  min-height: 80vh;
+  min-height: 100vh;
+
 }
 
 
@@ -67,25 +77,35 @@ section {
 .navbar__menu ul {
   padding-left: 0;
   margin: 0;
-  text-align: right;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: solid 1px fuchsia;
 }
 
-.navbar__menu li {
-  display: inline-block;
-}
-
-.navbar__menu .menu__link {
+.menu__link {
   display: block;
   padding: 1em;
   font-weight: bold;
-  text-decoration: none;
-  color: #000;
+
 }
 
-.navbar__menu .menu__link:hover {
-  background: #333;
-  color: #fff;
+.menu__link:hover {
+  background: #9999e6;
   transition: ease 0.3s all;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+  padding: 1em;
+
+}
+
+a:hover {
+  color: #fff;
+
 }
 
 /* Header Styles */
@@ -95,6 +115,7 @@ section {
   top: 0;
   width: 100%;
   z-index: 5;
+
 }
 
 /* Footer Styles */
@@ -193,28 +214,51 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
-section.your-active-class {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+
+.active-class {
+  border: solid 5px #e4decd;
+
 }
 
-section.your-active-class .landing__container::before {
-  opacity: 1;
-  animation: rotate 4s linear 0s infinite forwards;
+.active__link {
+  background: rgb(166, 167, 252);
 }
 
-section.your-active-class .landing__container::after {
-  opacity: 1;
-  animation: rotate 5s linear 0s infinite forwards reverse;
+.active {
+  background-color: rgb(167, 185, 235);
 }
 
-/* Section Active Styles Keyframe Animations */
-@keyframes rotate {
-  from {
-    transform: rotate(0deg) translate(-1em) rotate(0deg);
-  }
 
-  to {
-    transform: rotate(360deg) translate(-1em) rotate(-360deg);
-  }
+/* button*/
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 16px;
+  /* Place the button 30px from the right */
+  z-index: 1;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: rgb(235, 168, 223);
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  font-size: 1em;
+
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }
