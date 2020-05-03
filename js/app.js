@@ -57,6 +57,35 @@ function buildNav() {
 }
 
 
+//add class 'active' to section when it is near top of viewport
+
+function setActive() {
+  for (const section of sections) {
+
+    const elem = section.getBoundingClientRect();
+    if (
+      elem.top <= 350 && elem.bottom >= 400
+    ) {
+      const id = section.getAttribute('id');
+      document.querySelector('.' + id).classList.add('active');
+      section.classList.add('active-class');
+
+    } else {
+      const id = section.getAttribute('id');
+      document.querySelector('.' + id).classList.remove('active');
+      section.classList.remove('active-class');
+    }
+  }
+}
+
+document.addEventListener('scroll', function () {
+  setActive();
+});
+
+
+
+
+
 
 
 
