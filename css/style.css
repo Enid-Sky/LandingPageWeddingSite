@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background: linear-gradient(0deg, rgb(106, 180, 240) 0%, rgba(0, 13, 60, 1) 100%);
+  background: linear-gradient(0deg, rgb(57, 160, 160) 0%, rgba(0, 13, 60, 1) 100%);
   margin: 0;
   font-family: 'Poppins', Sans-Serif;
   color: #fff;
@@ -127,7 +127,7 @@ h1 {
 
   /* Footer Styles */
   .page__footer {
-    background: #1a2b77;
+    background: #04346b;
     padding: 3em;
     color: #fff;
   }
