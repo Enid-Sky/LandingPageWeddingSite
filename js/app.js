@@ -91,20 +91,15 @@ document.body.appendChild(btn);
 
 
 //get top scroll button:
-myBtn = document.getElementById('myBtn');
+//myBtn = document.getElementById('myBtn');
 
 
 //show button when user scrolls away from the top
 function showButton() {
-  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-    myBtn.style.display = 'block';
-    const buttonStyle = myBtn.getAttribute('id');
-    buttonStyle.classList.add('active-button-class');
-
+  if (document.body.scrollTop >= 350 || document.documentElement.scrollTop >= 350) {
+    btn.setAttribute('class', 'active-button');
   } else {
-    myBtn.style.display = 'none';
-    const buttonStyle = myBtn.getAttribute('id');
-    buttonStyle.classList.remove('active-button-class');
+    btn.classList.remove('active-button');
   }
 }
 
@@ -113,10 +108,12 @@ window.onscroll = function () {
 };
 
 
+
 //click button to scroll to the top
 
 function topFunction() {
   document.documentElement.scrollTop = 0;
+
 }
 
 document.addEventListener('click', function () {
