@@ -1,1 +1,2 @@
-"# LandingPageWeddingSite" 
+# Landing Page Project 
+The objective of this project is to create dynamic content using the DOM. This site is styled as a Wedding Site Landing page, and uses Vanilla JavaScript to dynamically create a navigation menu based on sections added to the page. It is clear which section is being viewed as the user scrolls the page. When clicking an item from the navigation menu, the user is scrolled to the desired section. Starter HTML and CSS provided by Udacity and updated accordingly. 
