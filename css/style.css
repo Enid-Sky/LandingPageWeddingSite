@@ -20,7 +20,6 @@ body {
   margin: 0;
   font-family: 'Poppins', Sans-Serif;
   color: #fff;
-  color
 }
 
 
@@ -52,7 +51,6 @@ h1 {
     font-family: 'Oxygen', Sans-Serif;
     font-size: 1.5em;
     color: #fff;
-
   }
 
   p {
@@ -72,10 +70,14 @@ h1 {
 
   section {
     position: relative;
-    min-height: 60vh;
-
+    min-height: 40vh;
   }
 
+
+  .image {
+    display: flex;
+    width: 500px;
+  }
 
   /* ---- Module Rules ---- */
 
@@ -275,17 +277,5 @@ h1 {
     to {
       transform: rotate(360deg) translate(-1em) rotate(-360deg);
     }
-  }
-
-  .image {
-    display: flex;
-    justify-content: left;
-    width: 500px;
-  }
-
-  .image__ {
-    display: flex;
-    justify-items: left;
-    width: 500px;
 
   }
