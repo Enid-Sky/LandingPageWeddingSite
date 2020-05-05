@@ -28,14 +28,12 @@ body {
 h1 {
   font-family: 'Poppins', 'Fira Sans', sans-serif;
   font-size: 3em;
-}
-
-h1 {
   display: flex;
   justify-content: center;
   margin-top: 5em;
   text-align: center;
 }
+
 
 h2 {
   margin-left: 16px;
