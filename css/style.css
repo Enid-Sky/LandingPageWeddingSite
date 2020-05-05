@@ -68,13 +68,12 @@ main {
 }
 
 
-
 /* Navigation Styles - default ----*/
 .navbar__menu ul {
   margin: 0;
   text-align: center;
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .menu__link {
@@ -98,7 +97,6 @@ a {
 a:hover {
   color: #fff;
 }
-
 
 
 /* Landing Container - default*/
@@ -455,7 +453,6 @@ section.active-class .landing__container::after {
     opacity: 0;
     transition: ease 0.5s all;
   }
-
 }
 
 
