@@ -1,19 +1,9 @@
-/**
- * 
- * JS Version: ES2015/ES6
- * 
- * JS Standard: ESlint
- * 
- */
 
 /**
- * Define Global Variables
- */
+ * Global Variables
 /*
 const navbar = document.querySelector('#navbar__list');
 const sections = document.querySelectorAll('section');
-const sectionName = document.querySelectorAll('section[data-nav]');
-
 */
 
 const navbar = document.querySelector("#navbar__list");
@@ -21,7 +11,6 @@ const sections = document.getElementsByTagName('section');
 
 /**
  * End Global Variables
- * 
  */
 
 
