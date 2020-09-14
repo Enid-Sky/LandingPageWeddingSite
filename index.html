@@ -2,95 +2,106 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Manipulating the DOM</title>
-  <!-- Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?Poppins:ital,wght@;1,600;1,900family=Fira+Sans:900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Website</title>
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?Poppins:ital,wght@;1,600;1,900family=Fira+Sans:900&display=swap"
+        rel="stylesheet">
 
 
-  <!-- Load Styles -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Load Styles -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- HTML Follows BEM naming conventions 
+    <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
-  <header class="page__header">
-    <nav class="navbar__menu">
-      <!-- Navigation starts as empty UL that will be populated with JS -->
-      <ul id="navbar__list"></ul>
-    </nav>
-  </header>
-  <main>
-    <header class="main__hero">
-      <h1>Olivia & James</h1>
-
+    <header class="page__header">
+        <nav class="navbar__menu">
+            <!-- Navigation starts as empty UL that will be populated with JS -->
+            <ul id="navbar__list"></ul>
+        </nav>
     </header>
-    <!-- Each Section has an ID (used for the anchor) and 
+    <main>
+        <header class="main__hero">
+            <h1>Olivia & James</h1>
+
+        </header>
+        <!-- Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-    <section id="section1" data-nav="Story">
-      <div class="landing__container">
-        <h2>Our Story</h2>
-        <p>It was a Saturday back in 2012, and we both decided to help out a mutual friend and attend her yoga class.
-          There were only a handful of people in attendance, so it was pretty easy to spot each other from across the
-          room. One week later, we were on our first date at the Library Ale House in Santa Monica where we bonded over
-          fish tacos, craft beer, and witty banter. The rest is history! (Photo by Nathan Dumlao) </p>
-        <!--<div class="image">
+        <section id="section1" data-nav="Story">
+            <div class="landing__container">
+                <h2>Our Story</h2>
+                <p>It was a Saturday back in 2012, and we both decided to help out a mutual friend and attend her yoga
+                    class.
+                    There were only a handful of people in attendance, so it was pretty easy to spot each other from
+                    across the
+                    room. One week later, we were on our first date at the Library Ale House in Santa Monica where we
+                    bonded over
+                    fish tacos, craft beer, and witty banter. The rest is history! (Photo by Nathan Dumlao) </p>
+                <!--<div class="image">
           <img src="images/proposal2.jpg" alt="couple sitting together">
         </div>-->
 
-        <p></p>
-      </div>
-    </section>
-    <section id="section2" data-nav="Proposal">
-      <div class="landing__container">
-        <h2>The Proposal</h2>
-        <p>The proposal happened on a weekend trip to Carmel-by-the-Sea. We left home early in the morning, drove south
-          for a few hours taking in the scenery. When we got to town we hit up a beautiful brunch spot and spent the day
-          window shopping around town and taking in the gallery art.
-          That afternoon we stopping into a wine and cheese shop. We love wine tasting so we bought wine to take down
-          to the beach for sunset. I had no clue what he had planned or that my life was about to change forever.
-          Just before sunset he got down on his knee and I said YES!</p>
+                <p></p>
+            </div>
+        </section>
+        <section id="section2" data-nav="Proposal">
+            <div class="landing__container">
+                <h2>The Proposal</h2>
+                <p>The proposal happened on a weekend trip to Carmel-by-the-Sea. We left home early in the morning,
+                    drove south
+                    for a few hours taking in the scenery. When we got to town we hit up a beautiful brunch spot and
+                    spent the day
+                    window shopping around town and taking in the gallery art.
+                    That afternoon we stopping into a wine and cheese shop. We love wine tasting so we bought wine to
+                    take down
+                    to the beach for sunset. I had no clue what he had planned or that my life was about to change
+                    forever.
+                    Just before sunset he got down on his knee and I said YES!</p>
 
-      </div>
-    </section>
-    <section id="section3" data-nav="Wedding">
-      <div class="landing__container">
-        <h2>The Wedding: December 5th 2020</h2>
-        <p>The ceremony will take place at 3PM in a forest setting in front of the reception venue. The reception will
-          take
-          place in the charming Victorian house immediately after the ceremony.</p>
-        <h3>Location</h3>
-        <p>Sigmund Stern Recreation Grove, Sloat Boulevard, San Francisco, CA 94132</p>
-      </div>
-    </section>
-    <section id="section4" data-nav="Travel">
-      <div class="landing__container">
-        <h2>Travel</h2>
-        <h3>Flights</h3>
-        <p>San Francisco International (SFO) </p>
-        <p>San Jose International (SJC)</p>
-        <h3>San Francisco Marriott Union Square</h3>
-        <p>Located just steps away from Union Square, the hotel is right by one of the city's iconic cable car lines,
-          making it easy to hop aboard and explore numerous attractions including Chinatown, Fisherman's Wharf and Pier
-          39. We'll be staying here the weekend of the wedding.</p>
-        <h3>Fairmont San Francisco</h3>
-        <p>Beautiful hotel near all downtown attractions. Featuring the Tonga Room (as seen on No Reservations with
-          Anthony Bourdain) it's a little pricey, but worth it!</p>
-      </div>
-    </section>
-  </main>
-  <footer class="page__footer">
-    <p>Any questions about the wedding, please contact us:</p>
-    <p>Email: hello@protonmail.com</p>
-    <p>&hearts; beats</p>
+            </div>
+        </section>
+        <section id="section3" data-nav="Wedding">
+            <div class="landing__container">
+                <h2>The Wedding: December 5th 2020</h2>
+                <p>The ceremony will take place at 3PM in a forest setting in front of the reception venue. The
+                    reception will
+                    take
+                    place in the charming Victorian house immediately after the ceremony.</p>
+                <h3>Location</h3>
+                <p>Sigmund Stern Recreation Grove, Sloat Boulevard, San Francisco, CA 94132</p>
+            </div>
+        </section>
+        <section id="section4" data-nav="Travel">
+            <div class="landing__container">
+                <h2>Travel</h2>
+                <h3>Flights</h3>
+                <p>San Francisco International (SFO) </p>
+                <p>San Jose International (SJC)</p>
+                <h3>San Francisco Marriott Union Square</h3>
+                <p>Located just steps away from Union Square, the hotel is right by one of the city's iconic cable car
+                    lines,
+                    making it easy to hop aboard and explore numerous attractions including Chinatown, Fisherman's Wharf
+                    and Pier
+                    39. We'll be staying here the weekend of the wedding.</p>
+                <h3>Fairmont San Francisco</h3>
+                <p>Beautiful hotel near all downtown attractions. Featuring the Tonga Room (as seen on No Reservations
+                    with
+                    Anthony Bourdain) it's a little pricey, but worth it!</p>
+            </div>
+        </section>
+    </main>
+    <footer class="page__footer">
+        <p>Any questions about the wedding, please contact us:</p>
+        <p>Email: hello@protonmail.com</p>
+        <p>&hearts; beats</p>
 
-  </footer>
+    </footer>
 
 
 </body>
